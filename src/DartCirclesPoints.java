@@ -3,16 +3,16 @@ import java.util.Map;
 
 public enum DartCirclesPoints {
 
-    outsideDartCircle(0,0),
-    ThirdCircle(1, 1),
-    SecondCircle(2,5),
-    InnermostCircle(3,10);
+    outsideDartCircle(10,0),
+    ThirdCircle(5, 1),
+    SecondCircle(1,5),
+    FirstCircle(0,10);
 
 
     public final int value;
     public final int circle;
 
-     private DartCirclesPoints(int circle,int value) {
+    DartCirclesPoints(int circle, int value) {
             this.value = value;
             this.circle = circle;
         }
@@ -35,6 +35,11 @@ public enum DartCirclesPoints {
         public int getValue ()
         {
             return value;
+        }
+
+        public int getCircle()
+        {
+            return circle;
         }
 
 }

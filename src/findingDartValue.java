@@ -41,7 +41,7 @@ public class findingDartValue {
        {
            case 0:
                System.out.println ("the player has earned :"+
-                       DartCirclesPoints.outsideDartCircle.getValue()+" point");
+                       0+" point");
                break;
 
            case 1:
@@ -56,7 +56,7 @@ public class findingDartValue {
 
            case 3:
                System.out.println ("the player has earned :" +
-                       DartCirclesPoints.InnermostCircle.getValue() + " points");
+                       DartCirclesPoints.FirstCircle.getValue() + " points");
                break;
 
        }
